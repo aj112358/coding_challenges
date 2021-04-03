@@ -63,4 +63,24 @@ Optimization (will really differentiate you from the rest of the candidates)
 - can talk about time/space complexity
 - "Here's that I'm thining about optimization...."
 - shows your maturity -> if this goes into production, what will happen?
-- 
+
+
+============================
+
+https://www.youtube.com/watch?v=pnzZzbQ3ZAY
+
+Tip #4: Say "Can I think for a second?"
+- silence is awkward
+- therefore, clarify when you're thikning
+
+Tip #3: Think out loud
+- keep interviewer informed about where you are in your though process
+- interviewer may even tell you if you're doing in the right direction
+- **Think of the interview as a collaborative situation**
+
+Tip #2: Use examples
+- think of more examples to understand the problem
+- will help you think in a more concrete way
+
+Tip #1: Just ask them "Does this seem like a good strategy?"
+- will make sure you are not going down the wrong path!
