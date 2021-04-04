@@ -12,6 +12,7 @@ before I started coding, and am sharing what I did here.
 
 - Why are the teams in the 'competitions' array [home, away], but a 0/1 in the 'results' array represents away/home?????
 - Maybe we need to determine how many teams there are first - it may help somehow?
+- Easily: C(k,2) = len(results) -> .... -> k = \frac{1+\sqrt{1+8L}}{2}
 - We can use a dictionary to keep track of each team's scores.
 - The question only asks for which *team* wins, NOT the maximum score.
 
@@ -30,6 +31,7 @@ through the entire array to find the max. Hence, the time complexity would be O(
 - In our case, the 'key=...' is simply a way to retrieve a value for a given dictionary key, which I believe is done in
 O(1) time.
 - THUS: The overall time complexity is: O(n) + O(n)*O(1) -> O(n).
+- The space complexity is simply O(k), where k is the total number of teams.
 
     +++++ Final Comments +++++
 
