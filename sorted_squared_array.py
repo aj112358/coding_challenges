@@ -5,8 +5,8 @@ Date: April 4, 2021
 Time: 2:45 PM MST
 Time Taken: ~40 minutes
 
-Here are my problem-solving thoughts, and explanations of each solution I constructed. I did some rough work on paper,
-and am sharing what I did here.
+Here are my problem-solving thoughts, and explanations of each solution I constructed. I did some rough work on paper
+before I started coding, and am sharing what I did here.
 
     +++++ General Ideas/First Thoughts +++++
 
