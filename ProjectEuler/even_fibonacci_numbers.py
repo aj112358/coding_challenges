@@ -19,6 +19,7 @@ before I started coding, and am sharing what I did here.
 - phi^2 = phi + 1 can simplify the math formula!
 - Time complexity = O(n), where n is number of Fib nums less/equal to threshold
 - Indeed: n = floor(log(sqrt(5)*t + 0.5, base = phi)/3
+- Can extend code to include ANY starting two generators of the sequence.
 
     +++++ Final Comments +++++
 
