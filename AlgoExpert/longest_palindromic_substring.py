@@ -29,8 +29,6 @@ before I started coding, and am sharing what I did here.
 - Can stop (and hence go to next string element) if the pointers go out-of-index (ie. the entire string is a palindrome)
 OR if two outer elements are non-equal.
 
-    +++++ Approach #2: Recursive Approach +++++
-
     +++++ Analysis & Optimizations +++++
 
 - The iterative approach has quadratic time complexity
