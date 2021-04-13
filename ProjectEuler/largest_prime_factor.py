@@ -33,25 +33,32 @@ def largest_prime_factor(n):
     if n < 2:
         raise ValueError("Input must be an integer greater than 1.")
 
-    primes = [2]
-    num = 3
-    while True:
+    # primes = [2]
+    # num = 3
+    # while True:
+    #
+    #     while n % primes[-1] == 0:
+    #         n = n // primes[-1]
+    #
+    #     if n == 1:
+    #         return primes[-1]
+    #
+    #     if all(num % prime != 0 for prime in primes if prime < int(sqrt(num))+1):
+    #         if n % num == 0:
+    #             primes.append(num)
+    #
+    #     num += 2
 
-        while n % primes[-1] == 0:
-            n = n // primes[-1]
-
-        if n == 1:
-            return primes[-1]
-
-        if all(num % prime != 0 for prime in primes if prime < int(sqrt(num))+1):
-            if n % num == 0:
-                primes.append(num)
-
-        num += 2
+    num = 2
+    while n > 1:
+        while n % num == 0:
+            n = n // num
+        num += 1
+    return num-1
 
 
 if __name__ == "__main__":
 
-    x = 600_851_475_143
-    # x = 21
+    # x = 600_851_475_143
+    x = 21
     print(f"The largest prime factor of {x} is: {largest_prime_factor(x)}")
