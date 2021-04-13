@@ -24,6 +24,8 @@ staying safe and healthy.
 - AJ
 """
 
+from math import sqrt
+
 
 def compute_primes(n):
     """Computes the n-th prime number."""
@@ -32,9 +34,9 @@ def compute_primes(n):
     num = 3
     while len(primes) < n:
 
-        if all(num % prime != 0 for prime in primes):
+        if all(num % prime != 0 for prime in primes if prime < int(sqrt(num))+1):
             primes.append(num)
-        num += 1
+        num += 2
 
     return primes[-1]
 
