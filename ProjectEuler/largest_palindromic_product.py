@@ -1,4 +1,4 @@
-"""Problem: Find the largest palindrome made from the product of two 3-digit numbers.
+"""Problem: Find the largest palindrome made from the product of two n-digit numbers.
 
 Created By: AJ Singh
 Date: April 13, 2021
@@ -29,9 +29,9 @@ def is_palindrome(num):
     return str(num) == str(num)[::-1]
 
 
-def largest_palindromic_product():
+def largest_palindromic_product(d):
 
-    n = 9999
+    n = int("9" * d)
     largest = (0, 0, 0)
     while True:
 
@@ -40,7 +40,7 @@ def largest_palindromic_product():
             if i % 11 != 0:
                 continue
 
-            for j in range(n, 0, -1):
+            for j in range(n, 10 ** (d - 1), -1):
                 if is_palindrome(i * j) and i*j > largest[-1]:
                     largest = (i, j, i * j)
 
@@ -48,4 +48,5 @@ def largest_palindromic_product():
 
 
 if __name__ == "__main__":
-    print(largest_palindromic_product())
+    x = 3
+    print(largest_palindromic_product(x))
