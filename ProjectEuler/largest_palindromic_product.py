@@ -1,5 +1,10 @@
 """Problem: Find the largest palindrome made from the product of two n-digit numbers.
 
+How to take odd-length palindromes into account efficiently? They're not divisible by 11!
+
+ANSWER: The largest product of any two 2-digit numbers will always have an even number of digits.
+(Unless we are REALLY unlucky, and the largest palindrome is actually odd-length!)
+
 Created By: AJ Singh
 Date: April 13, 2021
 Time: 9:30 PM MST
@@ -41,12 +46,12 @@ def largest_palindromic_product(d):
                 continue
 
             for j in range(n, 10 ** (d - 1), -1):
-                if is_palindrome(i * j) and i*j > largest[-1]:
+                if i * j > largest[-1] and is_palindrome(i * j):
                     largest = (i, j, i * j)
 
         return largest
 
 
 if __name__ == "__main__":
-    x = 3
+    x = 5
     print(largest_palindromic_product(x))
